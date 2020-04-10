@@ -21,6 +21,11 @@ namespace ExamTwoQuestions.PointOfSale
         public CustomizeCobblerControl()
         {
             InitializeComponent();
+
         }
+
+        
+        
+
     }
 }

@@ -6,7 +6,7 @@ namespace ExamTwoCodeQuestions.Data
 {
     public class Cobbler : IOrderItem, INotifyPropertyChanged
     {
-        private FruitFilling fruit;
+        private FruitFilling fruit = FruitFilling.Peach;
         /// <summary>
         /// The fruit used in the cobbler
         /// </summary>
@@ -24,7 +24,7 @@ namespace ExamTwoCodeQuestions.Data
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private bool withIceCream;
+        private bool withIceCream = true;
         /// <summary>
         /// If the cobbler is served with ice cream
         /// </summary>

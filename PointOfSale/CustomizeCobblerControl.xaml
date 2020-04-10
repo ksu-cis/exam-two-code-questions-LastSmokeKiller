@@ -11,9 +11,9 @@
       <StackPanel>
           <TextBlock>Customize Cobbler</TextBlock>
         <Label Content="Fruit Fililing"/>
-        <RadioButton GroupName="FruitFilling" IsChecked="{Binding Path= IsPeach}">Peach</RadioButton>
-        <RadioButton GroupName="FruitFilling" IsChecked="{Binding Path= IsBlueBerry}">BlueBerry</RadioButton>
-        <RadioButton GroupName="FruitFilling" IsChecked="{Binding Path= IsCherry}">Cherry</RadioButton>
+        <RadioButton GroupName="FruitFilling" FontSize="30" IsChecked="{Binding Path= IsPeach}">Peach</RadioButton>
+        <RadioButton GroupName="FruitFilling" FontSize="30" IsChecked="{Binding Path= IsBlueBerry}">BlueBerry</RadioButton>
+        <RadioButton GroupName="FruitFilling" FontSize="30" IsChecked="{Binding Path= IsCherry}">Cherry</RadioButton>
       </StackPanel>
     </Grid>
 </UserControl>
