@@ -103,10 +103,53 @@ namespace ExamTwoCodeQuestions.DataTests
         }
 
         [Fact]
-        public void ChangingFruitFillingChangesFruitFilling()
+        public void ChangingFruitFillingChangesFruit()
         {
             var cobble = new Cobbler();
             Assert.PropertyChanged(cobble,"Fruit", () => {cobble.Fruit = FruitFilling.Blueberry;});
+        }
+
+        [Fact]
+        public void ChangingFruitFillingChangesIsBlueberry()
+        {
+            var cobble = new Cobbler();
+            Assert.PropertyChanged(cobble, "IsBlueberry", () => { cobble.Fruit = FruitFilling.Blueberry; });
+        }
+
+        [Fact]
+        public void ChangingFruitFillingChangesIsPeach()
+        {
+            var cobble = new Cobbler();
+            Assert.PropertyChanged(cobble, "IsPeach", () => { cobble.Fruit = FruitFilling.Blueberry; });
+        }
+
+        [Fact]
+        public void ChangingFruitFillingChangesCherry()
+        {
+            var cobble = new Cobbler();
+            Assert.PropertyChanged(cobble, "IsCherry", () => { cobble.Fruit = FruitFilling.Cherry; });
+        }
+
+        [Fact]
+        public void ChangingBlueberryChangesBlueberry()
+        {
+            var cobble = new Cobbler();
+            Assert.PropertyChanged(cobble, "IsBlueberry", () => { cobble.IsBlueBerry = false; });
+        }
+
+        [Fact]
+        public void ChangingCherryChangesCherry()
+        {
+            var cobble = new Cobbler();
+            Assert.PropertyChanged(cobble, "IsCherry", () => { cobble.IsCherry = false; });
+        }
+
+        [Fact]
+        public void ChangingPeachChangesPeach()
+        {
+            var cobble = new Cobbler();
+            Assert.PropertyChanged(cobble, "IsPeach", () => { cobble.Fruit = FruitFilling.Blueberry; });
+            Assert.PropertyChanged(cobble, "IsPeach", () => { cobble.IsPeach = false; });
         }
     }
 }

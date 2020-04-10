@@ -10,6 +10,7 @@
         
       <StackPanel>
           <TextBlock>Customize Cobbler</TextBlock>
+            <CheckBox FontSize="30" Name="cbWithIceCream" Margin="0 10 0 0" IsChecked="{Binding Path=WithIceCream}">With Ice Cream</CheckBox>
         <Label Content="Fruit Fililing"/>
         <RadioButton GroupName="FruitFilling" FontSize="30" IsChecked="{Binding Path= IsPeach}">Peach</RadioButton>
         <RadioButton GroupName="FruitFilling" FontSize="30" IsChecked="{Binding Path= IsBlueBerry}">BlueBerry</RadioButton>
