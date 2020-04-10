@@ -107,6 +107,8 @@ namespace ExamTwoCodeQuestions.DataTests
         {
             var cobble = new Cobbler();
             Assert.PropertyChanged(cobble,"Fruit", () => {cobble.Fruit = FruitFilling.Blueberry;});
+            Assert.PropertyChanged(cobble, "Fruit", () => { cobble.Fruit = FruitFilling.Peach; });
+            Assert.PropertyChanged(cobble, "Fruit", () => { cobble.Fruit = FruitFilling.Cherry; });
         }
 
         [Fact]
