@@ -15,9 +15,10 @@ namespace ExamTwoCodeQuestions.Data
             {
                 if(fruit == value) return;
                 fruit = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Cherry"));
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("BlueBerry"));
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Peach"));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Fruit"));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("IsCherry"));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("IsBlueBerry"));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("IsPeach"));
             } 
         }
 
@@ -64,20 +65,20 @@ namespace ExamTwoCodeQuestions.Data
 
         public bool IsCherry
         {
-            get{ return FruitFilling == FruitFilling.Cherry;}
-            set{ FruitFilling = FruitFilling.Cherry; }
+            get{ return Fruit == FruitFilling.Cherry;}
+            set{ Fruit = FruitFilling.Cherry; }
         }
 
         public bool IsPeach
         {
-            get{return FruitFilling == FruitFilling.Peach;}
-            set{ FruitFilling = FruitFilling.Peach;}
+            get{return Fruit == FruitFilling.Peach;}
+            set{ Fruit = FruitFilling.Peach;}
         }
 
         public bool IsBlueBerry
         {
-            get{return FruitFilling == FruitFilling.Blueberry;}
-            set{FruitFilling = FruitFilling.Blueberry;}
+            get{return Fruit == FruitFilling.Blueberry;}
+            set{Fruit = FruitFilling.Blueberry;}
         }
     }
 }
