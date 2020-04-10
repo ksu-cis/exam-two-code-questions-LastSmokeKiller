@@ -111,26 +111,7 @@ namespace ExamTwoCodeQuestions.DataTests
             Assert.PropertyChanged(cobble, "Fruit", () => { cobble.Fruit = FruitFilling.Cherry; });
         }
 
-        [Fact]
-        public void ChangingFruitFillingChangesIsBlueberry()
-        {
-            var cobble = new Cobbler();
-            Assert.PropertyChanged(cobble, "IsBlueberry", () => { cobble.Fruit = FruitFilling.Blueberry; });
-        }
-
-        [Fact]
-        public void ChangingFruitFillingChangesIsPeach()
-        {
-            var cobble = new Cobbler();
-            Assert.PropertyChanged(cobble, "IsPeach", () => { cobble.Fruit = FruitFilling.Blueberry; });
-        }
-
-        [Fact]
-        public void ChangingFruitFillingChangesCherry()
-        {
-            var cobble = new Cobbler();
-            Assert.PropertyChanged(cobble, "IsCherry", () => { cobble.Fruit = FruitFilling.Cherry; });
-        }
+       
 
         [Fact]
         public void ChangingBlueberryChangesBlueberry()
